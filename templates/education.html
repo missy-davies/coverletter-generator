@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Education Information{% endblock %}
+
+{% block body %}
+
+<h3>FINALLY, A BIT OF INFO ABOUT YOUR EDUCATION:</h3>
+
+<form action="/cover-letter">
+    <div><label class='question'>What is your highest level of education?</label></div>
+    <select name='level-education' required>
+        <option value="masters">Master's Degree</option>
+        <option value="bachelors">Bachelor's Degree</option>
+        <option value="highschool">High School Diploma or Equivalent</option>
+    </select>
+
+    <div><label class='question'>What was your area of specialization?</label></div>
+    <div><input type="text" name="special" placeholder="Economics & Finance" required></div>
+
+    <div><button type='submit'>Generate my cover letter!</div>
+</form>
+
+
+{% endblock %}
