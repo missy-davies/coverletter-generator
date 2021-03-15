@@ -1,13 +1,17 @@
 {% extends 'base.html' %}
 
+{% block title %}Get Name{% endblock %}
+
 {% block body %}
 
 <h3>WE'LL ASK A FEW SIMPLE QUESTIONS,
     THEN PUT TOGETHER A COVER LETTER CUSTOM MADE FOR YOU!</h3>
 
-<form>
+<form action="/job">
     <div><label class='question'>To get started, can we get your full name?</label></div>
-    <div><input type="text" name="full-name" placeholder="first last"></div>
+    <div><input type="text" name="full-name" placeholder="Jane Smith" required></div>
+
+    <div><button type='submit'>Next</div>
 </form>
 
 {% endblock %}

@@ -2,16 +2,18 @@
 <html>
 
 <head>
-    <title>Cover Letter Generator Questions</title>
+    <title>
+        {% block title %}Cover Letter Generator Questions{% endblock %}
+    </title>
 </head>
 
 <body>
-<div class="navbar-header">
-    <img src="/static/img/seascape-header.jpeg">
-</div>
+    <div class="navbar-header">
+        <img src="/static/img/seascape-header.jpeg">
+    </div>
 
-{% block body %}
-{% endblock %}
+    {% block body %}
+    {% endblock %}
 
 </body>
 </html>

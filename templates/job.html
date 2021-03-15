@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Job Information{% endblock %}
+
+{% block body %}
+
+<h3>THANKS, NAME-VAR! NEXT UP, TELL US ABOUT THE JOB YOU'RE APPLYING FOR:</h3>
+
+<form action="/skills">
+    <div><label class='question'>What is the job title?</label></div>
+    <div><input type="text" name="job-title" placeholder="Software Engineer" required></div>
+
+    <div><label class='question'>What is the name of the company?</label></div>
+    <div><input type="text" name="company" placeholder="Ubermelon" required></div>
+        
+    <div><button type='submit'>Next</div>
+</form>
+
+
+{% endblock %}

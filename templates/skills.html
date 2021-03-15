@@ -1,0 +1,18 @@
+{% block title %}Skills Information{% endblock %}
+
+{% block body %}
+
+<h3>POSITION-VAR SOUNDS LIKE A REALLY COOL POSITION!
+    ALRIGHT, NOW LET'S GET SOME MORE INFO ABOUT YOUR SKILLS:</h3>
+
+<form action="/experience">
+    <div><label class='question'>What are 3 skills that make you qualified to be a JOBTITLE-VAR?</label></div>
+    <div><input type="text" name="skill-1" placeholder="Collaboration" required></div>
+    <div><input type="text" name="skill-2" placeholder="Problem solving" required></div>
+    <div><input type="text" name="skill-3" placeholder="Communication" required></div>
+
+    <div><button type='submit'>Next</div>
+</form>
+
+
+{% endblock %}

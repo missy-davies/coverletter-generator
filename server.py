@@ -17,8 +17,12 @@ def get_name():
 
     return render_template("start.html")
 
-# @app.route('/job')
 
+@app.route('/job')
+def get_job():
+    """Get information about prospective job"""
+
+    return render_template("job.html")
 
 
 
