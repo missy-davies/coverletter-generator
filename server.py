@@ -1,5 +1,6 @@
 """A cover letter generator"""
 
+
 from flask import Flask, render_template, request 
 
 app = Flask(__name__)
@@ -22,7 +23,12 @@ def get_name():
 def get_job():
     """Get information about prospective job"""
 
-    return render_template("job.html")
+    full_name = request.args.get("full-name")
+    name_list = full_name.split(" ")
+    first = name_list[0].title()
+    last = name_list[1].title()
+
+    return render_template("job.html", first=first)
 
 
 @app.route('/skills')
