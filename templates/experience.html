@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 {% block title %}Experience Information{% endblock %}
 
 {% block body %}
@@ -5,14 +7,20 @@
 <h3>WOW, COMPANY-VAR WOULD BE LUCKY TO HAVE YOU! TO SEAL THE DEAL,
     LET'S GET SOME INFORMATION ABOUT YOUR PAST EXPERIENCE:</h3>
 
-<form action="/experience">
+<form action="/education">
     <div><label class='question'>How many years of experience do you have in this field?</label></div>
     <div><input type="number" name="years-experience" placeholder="2" required></div>
     
     <div><label class='question'>In under 2 sentences, tell me about your greatest 
-        relevant professional accomplishment:</label></div>
+        relevant professional accomplishment at your most recent job:</label></div>
     
-    <div><textarea name="accomplishment" required maxlength="350"></textarea></div>
+    <div>
+        <textarea name="accomplishment" required maxlength="350" placeholder=
+            "Over a span of 3 months, I increased customer retention at Pearmelon
+            by 30% by implementing a 100-day communication plan to address questions 
+            and progress.">
+        </textarea>
+    </div>
 
     <div><button type='submit'>Next</div>
 </form>
