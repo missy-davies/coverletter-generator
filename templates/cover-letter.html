@@ -7,20 +7,43 @@
 </head>
 
 <body>
-    <h1>Here it is!</h1>
+    <h1>Here it is, {{ session['first'] }}!</h1>
     
     <h3>Simply copy your personalized cover letter below, and finish
         applying to your dream jobs!</h3>
 
     <p>
-        Doggo ipsum dat tungg tho much ruin diet doge. Sub woofer extremely cuuuuuute much ruin diet heck most angery pupper I
-        have ever seen many pats heckin angery woofer, boofers I am bekom fat corgo mlem. porgo. Wow very biscit blop smol
-        shooberino mlem, ruff very jealous pupper shoob, puggo super chub borkf. long water shoob such treat. Thicc the
-        neighborhood pupper heck ruff woofer, lotsa pats long doggo fat boi shibe smol, blep shibe long woofer. Shooberino snoot
-        you are doing me the shock lotsa pats heckin good boys long woofer doggo, long doggo big ol pupper wow very biscit
-        porgo. You are doin me a concern doggorino very hand that feed shibe big ol pupper very taste wow, heckin angery woofer
-        borking doggo heckin good boys and girls. Corgo shoob boofers wrinkler wow very biscit, floofs what a nice floof
-        fluffer. Waggy wags length boy bork very jealous pupper, heck floofs.
+        Dear Hiring Manager,
+    </p>    
+    <p>
+        My {{ session['years_experience'] }}+ years of work experience combined
+        with my {{ session['skill1'] }} and {{ session['skill2'] }} skills make
+        me a perfect fit for the position of {{ session['job-title'] }} at
+        {{ session['company'] }}.
+    </p>
+    <p>
+        While studying and working toward getting my
+        {{ session['level-education'] }}, I specialized in
+        {{ session['special'] }} to dig deeper and further hone my
+        {{ session['skill3'] }} skills.
+    </p>
+    <p>
+        In my current role, I was recently recognized for my outstanding
+        performance;
+    <p>
+        {{ session['accomplishment'] }}
+    </p>
+    </p>
+    <p>
+        I’m excited to talk to you about the {{ session['job-title'] }} role
+        and how I can help be a part of making steps toward achieving
+        {{ session['company'] }}'s mission.
+    </p>
+    <p>
+        Kind regards,
+    </p>
+    <p>
+        {{ session['first'] }} {{ session['last'] }}
     </p>
 
     <form action="/">

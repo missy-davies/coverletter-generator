@@ -87,7 +87,7 @@ def generate_coverletter():
     edu = request.args.get("level-education")
     session['level-education'] = edu
 
-    special = request.args.get("special")
+    special = request.args.get("special").lower()
     session['special'] = special
 
     return render_template("cover-letter.html")
