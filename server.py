@@ -1,9 +1,13 @@
 """A cover letter generator"""
 
 
-from flask import Flask, render_template, request 
+from flask import Flask, redirect, request, render_template, session
+from flask_debugtoolbar import DebugToolbarExtension
+
 
 app = Flask(__name__)
+app.secret_key = 'THISISTHESECRETKEY'
+
 
 @app.route('/')
 def home_page():
@@ -26,7 +30,7 @@ def get_job():
     full_name = request.args.get("full-name")
     name_list = full_name.split(" ")
     first = name_list[0].title()
-    last = name_list[1].title()
+    last = name_list[1].title() # might be extra and can remove 
 
     return render_template("job.html", first=first)
 
@@ -35,14 +39,18 @@ def get_job():
 def get_skills():
     """Get information about skills"""
 
-    return render_template("skills.html")
+    position = request.args.get("job-title")
+
+    return render_template("skills.html", position=position)
 
 
 @app.route('/experience')
 def get_experience():
     """Get information about experience"""
 
-    return render_template("experience.html")
+    company = request.args.get("company")
+
+    return render_template("experience.html", company=company)
 
 
 @app.route('/education')
@@ -61,4 +69,8 @@ def generate_coverletter():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.debug = True
+
+    DebugToolbarExtension(app)
+
+    app.run(host='0.0.0.0')

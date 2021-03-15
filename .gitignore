@@ -2,3 +2,4 @@ env/
 *.pyc
 pycache/
 *.DS_Store
+secrets.sh
