@@ -4,14 +4,16 @@
 
 {% block body %}
 
-<h3>We'll ask a few simple questions,
-    then put together a cover letter custom made for you!</h3>
+<div class='container'>
+    <h3>We'll ask a few simple questions,
+        then put together a cover letter custom made for you!</h3>
 
-<form action="/job">
-    <div><label class='question'>To get started, can we get your full name?</label></div>
-    <div><input type="text" name="full-name" placeholder="Jane Smith" required></div>
+    <form action="/job">
+        <div><label class='question'>To get started, can we get your full name?</label></div>
+        <div><input type="text" name="full-name" placeholder="Jane Smith" required></div>
 
-    <div><button type='submit'>Next</div>
-</form>
+        <div><button type='submit'>Next</div>
+    </form>
+</div>
 
 {% endblock %}

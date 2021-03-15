@@ -24,7 +24,7 @@ def get_name():
 
 @app.route('/job')
 def get_job():
-    """Get information about prospective job"""
+    """Get information about prospective job and save to session"""
 
     full_name = request.args.get("full-name")
     name_list = full_name.split(" ")
@@ -40,7 +40,7 @@ def get_job():
 
 @app.route('/skills')
 def get_skills():
-    """Get information about skills"""
+    """Get information about skills and save to session"""
 
     job_title = request.args.get("job-title").title()
     session['job-title'] = job_title
@@ -53,7 +53,7 @@ def get_skills():
 
 @app.route('/experience')
 def get_experience():
-    """Get information about experience"""
+    """Get information about experience and save to session"""
 
     skill1 = request.args.get("skill-1").lower()
     session['skill1'] = skill1
@@ -69,7 +69,7 @@ def get_experience():
 
 @app.route('/education')
 def get_education():
-    """Get information about education"""
+    """Get information about education and save to session"""
 
     years_experience = request.args.get("years-experience")
     session['years_experience'] = years_experience
@@ -82,7 +82,7 @@ def get_education():
 
 @app.route('/cover-letter')
 def generate_coverletter():
-    """Generate custom cover letter"""
+    """Generate custom cover letter and save to session"""
 
     edu = request.args.get("level-education")
     session['level-education'] = edu
