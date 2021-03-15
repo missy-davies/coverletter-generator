@@ -4,11 +4,11 @@
 
 {% block body %}
 
-<h3>{{ position }} sounds like a really cool position!
+<h3>That sounds like a really cool position!
     Alright, now let's get some more info about your skills:</h3>
 
 <form action="/experience">
-    <div><label class='question'>What are 3 skills that make you qualified to be a JOBTITLE-VAR?</label></div>
+    <div><label class='question'>What are 3 skills that make you qualified to be a {{ session['job-title'] }}?</label></div>
     <div><input type="text" name="skill-1" placeholder="Collaboration" required></div>
     <div><input type="text" name="skill-2" placeholder="Problem solving" required></div>
     <div><input type="text" name="skill-3" placeholder="Communication" required></div>
