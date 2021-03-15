@@ -25,12 +25,33 @@ def get_job():
     return render_template("job.html")
 
 
+@app.route('/skills')
+def get_skills():
+    """Get information about skills"""
 
-# @app.route('/skills')
+    return render_template("skills.html")
 
 
+@app.route('/experience')
+def get_experience():
+    """Get information about experience"""
 
-# @app.route('/experience')
+    return render_template("experience.html")
+
+
+@app.route('/education')
+def get_education():
+    """Get information about education"""
+
+    return render_template("education.html")
+
+
+@app.route('/cover-letter')
+def generate_coverletter():
+    """Generate custom cover letter"""
+
+    return render_template("cover-letter.html")
+
 
 
 if __name__ == '__main__':
