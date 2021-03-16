@@ -1,0 +1,47 @@
+
+html, body {
+  background-image: url("/static/img/seascape-full.jpeg");
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  font-family: Georgia;
+  color: rgb(0, 0, 0);
+  font-size: 35pt;
+  padding: 30px 30px 5px 30px;
+  }
+
+
+.container {
+  height: 20vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.inner-container {
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(75%);
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 0 100pt 0 100pt;
+  padding: 0 0 30px 0;
+}
+
+
+button {
+    background-color: #344966;
+    height: 45px;
+    width: 300px;
+    font-size: 18pt;
+    font-family: 'Gill Sans';
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+

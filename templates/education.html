@@ -4,21 +4,25 @@
 
 {% block body %}
 
-<h3>Finally, a bit of info about your education:</h3>
+<div class='container'>
+    <div class='inner-container'>
 
-<form action="/cover-letter">
-    <div><label class='question'>What is your highest level of education?</label></div>
-    <select name='level-education' required>
-        <option value="Master's Degree">Master's Degree</option>
-        <option value="Bachelor's Degree">Bachelor's Degree</option>
-        <option value="High School Diploma">High School Diploma</option>
-    </select>
+        <h3>Finally, a bit of info about your education:</h3>
 
-    <div><label class='question'>What was your area of specialization?</label></div>
-    <div><input type="text" name="special" placeholder="Economics & Finance" required></div>
+        <form action="/cover-letter">
+            <div><label class='question'>What is your highest level of education?</label></div>
+            <select name='level-education' required>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="High School Diploma">High School Diploma</option>
+            </select>
 
-    <div><button type='submit'>Generate my cover letter!</div>
-</form>
+            <div><label class='question'>What was your area of specialization?</label></div>
+            <div><input type="text" name="special" placeholder="Economics & Finance" required></div>
 
+            <div><button class='generate' type='submit'>generate my cover letter!</div>
+        </form>
+    </div>
+</div>
 
 {% endblock %}

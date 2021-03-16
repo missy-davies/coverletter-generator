@@ -4,17 +4,22 @@
 
 {% block body %}
 
-<h3>Thanks, {{ session['first'] }}! Next up, tell us about the job you're applying for:</h3>
+<div class='container'>
+    <div class='inner-container'>
+        <h3>Thanks, {{ session['first'] }}!<br>
+            Next up, tell us about the job<br>
+            you're applying for:</h3>
 
-<form action="/skills">
-    <div><label class='question'>What is the job title?</label></div>
-    <div><input type="text" name="job-title" placeholder="Software Engineer" required></div>
+        <form action="/skills">
+            <div><label class='question'>What is the job title?</label></div>
+            <div><input type="text" name="job-title" placeholder="Software Engineer" required></div>
 
-    <div><label class='question'>What is the name of the company?</label></div>
-    <div><input type="text" name="company" placeholder="Ubermelon" required></div>
-        
-    <div><button type='submit'>Next</div>
-</form>
-
+            <div><label class='question'>What is the name of the company?</label></div>
+            <div><input type="text" name="company" placeholder="Ubermelon" required></div>
+                
+            <div><button type='submit'>next</div>
+        </form>
+    </div>
+</div>
 
 {% endblock %}

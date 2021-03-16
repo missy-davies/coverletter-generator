@@ -3,53 +3,57 @@
 
 <head>
     <title>Cover Letter</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/styling.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/styling-letter.css" />
 </head>
 
 <body>
-    <h1>Here it is, {{ session['first'] }}!</h1>
-    
-    <h3>Simply copy your personalized cover letter below, and finish
-        applying to your dream jobs!</h3>
-
-    <p>
-        Dear Hiring Manager,
-    </p>    
-    <p>
-        My {{ session['years_experience'] }}+ years of work experience combined
-        with my {{ session['skill1'] }} and {{ session['skill2'] }} skills make
-        me a perfect fit for the position of {{ session['job-title'] }} at
-        {{ session['company'] }}.
-    </p>
-    <p>
-        While studying and working toward getting my
-        {{ session['level-education'] }}, I specialized in
-        {{ session['special'] }} to dig deeper and further hone my
-        {{ session['skill3'] }} skills.
-    </p>
-    <p>
-        In my current role, I was recently recognized for my outstanding
-        performance;
-    <p>
-        {{ session['accomplishment'] }}
-    </p>
-    </p>
-    <p>
-        I’m excited to talk to you about the {{ session['job-title'] }} role
-        and how I can help be a part of making steps toward achieving
-        {{ session['company'] }}'s mission.
-    </p>
-    <p>
-        Kind regards,
-    </p>
-    <p>
-        {{ session['first'] }} {{ session['last'] }}
-    </p>
-
-    <form action="/">
-        <div><button type='submit'>Home</div>
-    </form>
-    
+    <div class='container'>
+        <div class='inner-container'>
+            <h1>Here it is, {{ session['first'] }}!</h1>
+            
+            <h3>Simply copy your personalized cover letter below, and finish
+                applying to your dream jobs!</h3>
+            
+            <div class='letter'>
+                <p>
+                    Dear Hiring Manager,
+                </p>    
+                <p>
+                    My {{ session['years_experience'] }}+ years of work experience combined
+                    with my {{ session['skill1'] }} and {{ session['skill2'] }} skills make
+                    me a perfect fit for the position of {{ session['job-title'] }} at
+                    {{ session['company'] }}.
+                </p>
+                <p>
+                    While studying and working toward getting my
+                    {{ session['level-education'] }}, I specialized in
+                    {{ session['special'] }} to dig deeper and further hone my
+                    {{ session['skill3'] }} skills.
+                </p>
+                <p>
+                    In my current role, I was recently recognized for my outstanding
+                    performance;
+                <p>
+                    {{ session['accomplishment'] }}
+                </p>
+                </p>
+                <p>
+                    I’m excited to talk to you about the {{ session['job-title'] }} role
+                    and how I can help be a part of making steps toward achieving
+                    {{ session['company'] }}'s mission.
+                </p>
+                <p>
+                    Kind regards,
+                </p>
+                <p>
+                    {{ session['first'] }} {{ session['last'] }}
+                </p>
+            </div>
+            <form action="/">
+                <div><button type='submit'>home</div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
