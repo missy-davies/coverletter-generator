@@ -1,6 +1,6 @@
 # Cover Letter Generator
 
-A web application to help users to generate a basic, customized cover letter to jump start the process of drafting a tailored cover letter for job applications. 
+A web application to help users to generate a basic, customized cover letter to jump-start the process of drafting a tailored cover letter for job applications. 
 
 The idea for this project came after completing a lab for Hackbright Academy in which we built a web application using Flask in Python 3 to generate mad libs stories. I then adapted and expanded upon the principals of the project to create a cover letter generator. 
 
