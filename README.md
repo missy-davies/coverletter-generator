@@ -46,7 +46,7 @@ The app is not built to handle any unexpected data types or variances in expecte
 
 # Final
  
-I create this app while learning web development at Hackbright Academy in March 2021 to further practice and solidify my knowledge using Flask and Jinja in Python 3 to build a web app. 
+I create this app after 3 weeks of learning web development at Hackbright Academy in March 2021 to further practice and solidify my knowledge using Flask and Jinja in Python 3 to build a web app.
 
 # Contact
 
