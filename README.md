@@ -50,5 +50,5 @@ I create this app while learning web development at Hackbright Academy in March 
 
 # Contact
 
-Please don't hesitate to get in touch with any quesitons:\
+Please don't hesitate to get in touch with any questions:\
 [LinkedIn Profile](https://www.linkedin.com/in/missydavies/)
