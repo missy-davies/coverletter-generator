@@ -8,6 +8,9 @@ The idea for this project came after completing a lab for Hackbright Academy in 
 
 Writing cover letters can be a difficult and agonizing process. The goal of this project is to create a tool that makes writing cover letters easy and painless by providing a tailored template.
 
+# Live Site
+[cover-letter-generator-md.herokuapp.com](https://cover-letter-generator-md.herokuapp.com/)
+
 # Demo
 Landing page > get user's name:
 ![landing page](/demo/start.gif)
