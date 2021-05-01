@@ -2,10 +2,10 @@
 
 from flask import Flask, request, render_template, redirect, session
 import jinja2
-
+import os 
 
 app = Flask(__name__)
-app.secret_key = 'THISISTHESECRETKEY'
+app.secret_key = os.environ.get('SECRET_KEY')
 
 
 @app.route('/')
